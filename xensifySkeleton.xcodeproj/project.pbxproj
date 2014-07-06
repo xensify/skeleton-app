@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3406E8E719561981000314BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3406E8E619561981000314BC /* CoreLocation.framework */; };
+		3415CDE31951851100C63C1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE21951851100C63C1E /* Foundation.framework */; };
+		3415CDE51951851100C63C1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE41951851100C63C1E /* CoreGraphics.framework */; };
+		3415CDE71951851100C63C1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE61951851100C63C1E /* UIKit.framework */; };
+		3415CDED1951851100C63C1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3415CDEB1951851100C63C1E /* InfoPlist.strings */; };
+		3415CDEF1951851100C63C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CDEE1951851100C63C1E /* main.m */; };
+		3415CDF31951851100C63C1E /* XFYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CDF21951851100C63C1E /* XFYAppDelegate.m */; };
+		3415CDF61951851100C63C1E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3415CDF41951851100C63C1E /* Main_iPhone.storyboard */; };
+		3415CDF91951851100C63C1E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3415CDF71951851100C63C1E /* Main_iPad.storyboard */; };
+		3415CDFC1951851100C63C1E /* XFYMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CDFB1951851100C63C1E /* XFYMasterViewController.m */; };
+		3415CDFF1951851100C63C1E /* XFYDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CDFE1951851100C63C1E /* XFYDetailViewController.m */; };
+		3415CE011951851100C63C1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3415CE001951851100C63C1E /* Images.xcassets */; };
+		3415CE081951851100C63C1E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CE071951851100C63C1E /* XCTest.framework */; };
+		3415CE091951851100C63C1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE21951851100C63C1E /* Foundation.framework */; };
+		3415CE0A1951851100C63C1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE61951851100C63C1E /* UIKit.framework */; };
+		3415CE121951851100C63C1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3415CE101951851100C63C1E /* InfoPlist.strings */; };
+		3415CE141951851100C63C1E /* xensifySkeletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CE131951851100C63C1E /* xensifySkeletonTests.m */; };
+		3421E93E196709480003CC59 /* libxensifySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3421E93B196709410003CC59 /* libxensifySDK.a */; };
+		342459721958C32800901608 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 342459711958C32800901608 /* CustomURLCache.m */; };
+		515B5305DD424566A5A484E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD5D5A16E5842DFBF056243 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3415CE0B1951851100C63C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3415CDD71951851100C63C1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3415CDDE1951851100C63C1E;
+			remoteInfo = xensifySkeleton;
+		};
+		3421E93A196709410003CC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34D822D41951840E0007844C;
+			remoteInfo = xensifySDK;
+		};
+		3421E93C196709410003CC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34D822E41951840E0007844C;
+			remoteInfo = xensifySDKTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CBA6E2FF940425C8AEB544E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3406E8E619561981000314BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3415CDDF1951851100C63C1E /* xensifySkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xensifySkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3415CDE21951851100C63C1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3415CDE41951851100C63C1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3415CDE61951851100C63C1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3415CDEA1951851100C63C1E /* xensifySkeleton-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xensifySkeleton-Info.plist"; sourceTree = "<group>"; };
+		3415CDEC1951851100C63C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3415CDEE1951851100C63C1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3415CDF01951851100C63C1E /* xensifySkeleton-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xensifySkeleton-Prefix.pch"; sourceTree = "<group>"; };
+		3415CDF11951851100C63C1E /* XFYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFYAppDelegate.h; sourceTree = "<group>"; };
+		3415CDF21951851100C63C1E /* XFYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFYAppDelegate.m; sourceTree = "<group>"; };
+		3415CDF51951851100C63C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		3415CDF81951851100C63C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		3415CDFA1951851100C63C1E /* XFYMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFYMasterViewController.h; sourceTree = "<group>"; };
+		3415CDFB1951851100C63C1E /* XFYMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFYMasterViewController.m; sourceTree = "<group>"; };
+		3415CDFD1951851100C63C1E /* XFYDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFYDetailViewController.h; sourceTree = "<group>"; };
+		3415CDFE1951851100C63C1E /* XFYDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFYDetailViewController.m; sourceTree = "<group>"; };
+		3415CE001951851100C63C1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3415CE061951851100C63C1E /* xensifySkeletonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xensifySkeletonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3415CE071951851100C63C1E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3415CE0F1951851100C63C1E /* xensifySkeletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xensifySkeletonTests-Info.plist"; sourceTree = "<group>"; };
+		3415CE111951851100C63C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3415CE131951851100C63C1E /* xensifySkeletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xensifySkeletonTests.m; sourceTree = "<group>"; };
+		3421E934196709400003CC59 /* xensifySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = xensifySDK.xcodeproj; path = "../../../../Github/Xensify_iOS-SDK/xensifySDK.xcodeproj"; sourceTree = "<group>"; };
+		342459701958C32100901608 /* CustomURLCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomURLCache.h; sourceTree = "<group>"; };
+		342459711958C32800901608 /* CustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomURLCache.m; sourceTree = "<group>"; };
+		BCD5D5A16E5842DFBF056243 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3415CDDC1951851100C63C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3421E93E196709480003CC59 /* libxensifySDK.a in Frameworks */,
+				3406E8E719561981000314BC /* CoreLocation.framework in Frameworks */,
+				3415CDE51951851100C63C1E /* CoreGraphics.framework in Frameworks */,
+				3415CDE71951851100C63C1E /* UIKit.framework in Frameworks */,
+				3415CDE31951851100C63C1E /* Foundation.framework in Frameworks */,
+				515B5305DD424566A5A484E8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3415CE031951851100C63C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415CE081951851100C63C1E /* XCTest.framework in Frameworks */,
+				3415CE0A1951851100C63C1E /* UIKit.framework in Frameworks */,
+				3415CE091951851100C63C1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3415CDD61951851100C63C1E = {
+			isa = PBXGroup;
+			children = (
+				3415CDE81951851100C63C1E /* xensifySkeleton */,
+				3415CE0D1951851100C63C1E /* xensifySkeletonTests */,
+				3415CDE11951851100C63C1E /* Frameworks */,
+				3415CDE01951851100C63C1E /* Products */,
+				2CBA6E2FF940425C8AEB544E /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		3415CDE01951851100C63C1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3415CDDF1951851100C63C1E /* xensifySkeleton.app */,
+				3415CE061951851100C63C1E /* xensifySkeletonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3415CDE11951851100C63C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3406E8E619561981000314BC /* CoreLocation.framework */,
+				3415CDE21951851100C63C1E /* Foundation.framework */,
+				3415CDE41951851100C63C1E /* CoreGraphics.framework */,
+				3415CDE61951851100C63C1E /* UIKit.framework */,
+				3415CE071951851100C63C1E /* XCTest.framework */,
+				BCD5D5A16E5842DFBF056243 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3415CDE81951851100C63C1E /* xensifySkeleton */ = {
+			isa = PBXGroup;
+			children = (
+				3421E934196709400003CC59 /* xensifySDK.xcodeproj */,
+				342459711958C32800901608 /* CustomURLCache.m */,
+				342459701958C32100901608 /* CustomURLCache.h */,
+				3415CDF11951851100C63C1E /* XFYAppDelegate.h */,
+				3415CDF21951851100C63C1E /* XFYAppDelegate.m */,
+				3415CDF41951851100C63C1E /* Main_iPhone.storyboard */,
+				3415CDF71951851100C63C1E /* Main_iPad.storyboard */,
+				3415CDFA1951851100C63C1E /* XFYMasterViewController.h */,
+				3415CDFB1951851100C63C1E /* XFYMasterViewController.m */,
+				3415CDFD1951851100C63C1E /* XFYDetailViewController.h */,
+				3415CDFE1951851100C63C1E /* XFYDetailViewController.m */,
+				3415CE001951851100C63C1E /* Images.xcassets */,
+				3415CDE91951851100C63C1E /* Supporting Files */,
+			);
+			path = xensifySkeleton;
+			sourceTree = "<group>";
+		};
+		3415CDE91951851100C63C1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3415CDEA1951851100C63C1E /* xensifySkeleton-Info.plist */,
+				3415CDEB1951851100C63C1E /* InfoPlist.strings */,
+				3415CDEE1951851100C63C1E /* main.m */,
+				3415CDF01951851100C63C1E /* xensifySkeleton-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3415CE0D1951851100C63C1E /* xensifySkeletonTests */ = {
+			isa = PBXGroup;
+			children = (
+				3415CE131951851100C63C1E /* xensifySkeletonTests.m */,
+				3415CE0E1951851100C63C1E /* Supporting Files */,
+			);
+			path = xensifySkeletonTests;
+			sourceTree = "<group>";
+		};
+		3415CE0E1951851100C63C1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3415CE0F1951851100C63C1E /* xensifySkeletonTests-Info.plist */,
+				3415CE101951851100C63C1E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3421E935196709400003CC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3421E93B196709410003CC59 /* libxensifySDK.a */,
+				3421E93D196709410003CC59 /* xensifySDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3415CDDE1951851100C63C1E /* xensifySkeleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3415CE171951851100C63C1E /* Build configuration list for PBXNativeTarget "xensifySkeleton" */;
+			buildPhases = (
+				BCA9CC18908B4E19A6CC4A5F /* Check Pods Manifest.lock */,
+				3415CDDB1951851100C63C1E /* Sources */,
+				3415CDDC1951851100C63C1E /* Frameworks */,
+				3415CDDD1951851100C63C1E /* Resources */,
+				4A733A573FED4F2D82CDE73C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xensifySkeleton;
+			productName = xensifySkeleton;
+			productReference = 3415CDDF1951851100C63C1E /* xensifySkeleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3415CE051951851100C63C1E /* xensifySkeletonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3415CE1A1951851100C63C1E /* Build configuration list for PBXNativeTarget "xensifySkeletonTests" */;
+			buildPhases = (
+				3415CE021951851100C63C1E /* Sources */,
+				3415CE031951851100C63C1E /* Frameworks */,
+				3415CE041951851100C63C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3415CE0C1951851100C63C1E /* PBXTargetDependency */,
+			);
+			name = xensifySkeletonTests;
+			productName = xensifySkeletonTests;
+			productReference = 3415CE061951851100C63C1E /* xensifySkeletonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3415CDD71951851100C63C1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XFY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = xensify;
+				TargetAttributes = {
+					3415CDDE1951851100C63C1E = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					3415CE051951851100C63C1E = {
+						TestTargetID = 3415CDDE1951851100C63C1E;
+					};
+				};
+			};
+			buildConfigurationList = 3415CDDA1951851100C63C1E /* Build configuration list for PBXProject "xensifySkeleton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3415CDD61951851100C63C1E;
+			productRefGroup = 3415CDE01951851100C63C1E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3421E935196709400003CC59 /* Products */;
+					ProjectRef = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3415CDDE1951851100C63C1E /* xensifySkeleton */,
+				3415CE051951851100C63C1E /* xensifySkeletonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3421E93B196709410003CC59 /* libxensifySDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libxensifySDK.a;
+			remoteRef = 3421E93A196709410003CC59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3421E93D196709410003CC59 /* xensifySDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = xensifySDKTests.xctest;
+			remoteRef = 3421E93C196709410003CC59 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3415CDDD1951851100C63C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415CDF91951851100C63C1E /* Main_iPad.storyboard in Resources */,
+				3415CE011951851100C63C1E /* Images.xcassets in Resources */,
+				3415CDF61951851100C63C1E /* Main_iPhone.storyboard in Resources */,
+				3415CDED1951851100C63C1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3415CE041951851100C63C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415CE121951851100C63C1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A733A573FED4F2D82CDE73C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA9CC18908B4E19A6CC4A5F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3415CDDB1951851100C63C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415CDFC1951851100C63C1E /* XFYMasterViewController.m in Sources */,
+				342459721958C32800901608 /* CustomURLCache.m in Sources */,
+				3415CDFF1951851100C63C1E /* XFYDetailViewController.m in Sources */,
+				3415CDF31951851100C63C1E /* XFYAppDelegate.m in Sources */,
+				3415CDEF1951851100C63C1E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3415CE021951851100C63C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415CE141951851100C63C1E /* xensifySkeletonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3415CE0C1951851100C63C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3415CDDE1951851100C63C1E /* xensifySkeleton */;
+			targetProxy = 3415CE0B1951851100C63C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3415CDEB1951851100C63C1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415CDEC1951851100C63C1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3415CDF41951851100C63C1E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415CDF51951851100C63C1E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3415CDF71951851100C63C1E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415CDF81951851100C63C1E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3415CE101951851100C63C1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415CE111951851100C63C1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3415CE151951851100C63C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3415CE161951851100C63C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3415CE181951851100C63C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBA6E2FF940425C8AEB544E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xensifySkeleton/xensifySkeleton-Prefix.pch";
+				INFOPLIST_FILE = "xensifySkeleton/xensifySkeleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3415CE191951851100C63C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBA6E2FF940425C8AEB544E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xensifySkeleton/xensifySkeleton-Prefix.pch";
+				INFOPLIST_FILE = "xensifySkeleton/xensifySkeleton-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3415CE1B1951851100C63C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xensifySkeleton.app/xensifySkeleton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xensifySkeleton/xensifySkeleton-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "xensifySkeletonTests/xensifySkeletonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3415CE1C1951851100C63C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xensifySkeleton.app/xensifySkeleton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xensifySkeleton/xensifySkeleton-Prefix.pch";
+				INFOPLIST_FILE = "xensifySkeletonTests/xensifySkeletonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3415CDDA1951851100C63C1E /* Build configuration list for PBXProject "xensifySkeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3415CE151951851100C63C1E /* Debug */,
+				3415CE161951851100C63C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3415CE171951851100C63C1E /* Build configuration list for PBXNativeTarget "xensifySkeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3415CE181951851100C63C1E /* Debug */,
+				3415CE191951851100C63C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3415CE1A1951851100C63C1E /* Build configuration list for PBXNativeTarget "xensifySkeletonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3415CE1B1951851100C63C1E /* Debug */,
+				3415CE1C1951851100C63C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3415CDD71951851100C63C1E /* Project object */;
+}
