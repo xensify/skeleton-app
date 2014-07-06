@@ -38,7 +38,7 @@
     //self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (XFYDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-        _xensifyManager = [[XFYManager alloc] initWithUserName:@"mauro" userKey: @"bc265576c9358080ea00e434f5fa7950" userUUID: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D" customerUUID: @"devel" withMonitoring:YES];
+        _xensifyManager = [[XFYManager alloc] initWithUserName:@"USERNAME" userKey: @"USERKEY" userUUID: @"USERUUID" customerUUID: @"devel" withMonitoring:YES];
         [_xensifyManager setNotificationWithMessage: @"Welcome to Xensify Platform" notificationAction: @"open app"];
         _xensifyManager.delegate = self;
 }

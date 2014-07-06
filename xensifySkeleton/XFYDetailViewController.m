@@ -44,15 +44,15 @@
         self.detailDescriptionLabel.text = thisObject.title;
         
         NSString *URLstring = [@"http://myibeacon-dev.elasticbeanstalk.com/api/" stringByAppendingString:@"objectImage/"];
-        URLstring = [URLstring stringByAppendingString:@"B9407F30-F5F8-466E-AFF9-25556B57FE6D"];
+        URLstring = [URLstring stringByAppendingString:@"USERUUID"];
         URLstring = [URLstring stringByAppendingString:@"&"];
         URLstring = [URLstring stringByAppendingString:[NSString stringWithFormat:@"%@",thisObject.major]];
         URLstring = [URLstring stringByAppendingString:@"&"];
         URLstring = [URLstring stringByAppendingString:[NSString stringWithFormat:@"%@",thisObject.minor]];
         
         NSURLCredential *newCredential;
-        newCredential = [NSURLCredential credentialWithUser: @"mauro"
-                                                   password: @"bc265576c9358080ea00e434f5fa7950"
+        newCredential = [NSURLCredential credentialWithUser: @"USERNAME"
+                                                   password: @"USERKEY"
                                                 persistence: NSURLCredentialPersistenceNone];
         
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
