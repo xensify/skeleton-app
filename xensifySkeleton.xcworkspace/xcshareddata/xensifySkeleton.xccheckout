@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9DC94B8D-7423-4303-AFC0-E4C7EBE424B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>xensifySkeleton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B84FD1DE-2D58-421C-9B97-EF6FA78F230A</key>
+		<string>https://github.com/xensify/skeleton-app.git</string>
+		<key>BBD53268-C7D1-4546-A317-2FD9383A7AD3</key>
+		<string>https://github.com/mauromezze/Xensify_iOS-SDK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xensifySkeleton.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B84FD1DE-2D58-421C-9B97-EF6FA78F230A</key>
+		<string>..</string>
+		<key>BBD53268-C7D1-4546-A317-2FD9383A7AD3</key>
+		<string>../../Xensify_iOS-SDK</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xensify/skeleton-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B84FD1DE-2D58-421C-9B97-EF6FA78F230A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B84FD1DE-2D58-421C-9B97-EF6FA78F230A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>skeleton-app</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BBD53268-C7D1-4546-A317-2FD9383A7AD3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xensify_iOS-SDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -24,9 +24,8 @@
 		3415CE0A1951851100C63C1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415CDE61951851100C63C1E /* UIKit.framework */; };
 		3415CE121951851100C63C1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3415CE101951851100C63C1E /* InfoPlist.strings */; };
 		3415CE141951851100C63C1E /* xensifySkeletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3415CE131951851100C63C1E /* xensifySkeletonTests.m */; };
-		3421E93E196709480003CC59 /* libxensifySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3421E93B196709410003CC59 /* libxensifySDK.a */; };
-		342459721958C32800901608 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 342459711958C32800901608 /* CustomURLCache.m */; };
 		515B5305DD424566A5A484E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD5D5A16E5842DFBF056243 /* libPods.a */; };
+		559A830E196D444600682738 /* libxensifySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559A830B196D43F700682738 /* libxensifySDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,16 +36,16 @@
 			remoteGlobalIDString = 3415CDDE1951851100C63C1E;
 			remoteInfo = xensifySkeleton;
 		};
-		3421E93A196709410003CC59 /* PBXContainerItemProxy */ = {
+		559A830A196D43F700682738 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+			containerPortal = 559A8304196D43F700682738 /* xensifySDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 34D822D41951840E0007844C;
 			remoteInfo = xensifySDK;
 		};
-		3421E93C196709410003CC59 /* PBXContainerItemProxy */ = {
+		559A830C196D43F700682738 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+			containerPortal = 559A8304196D43F700682738 /* xensifySDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 34D822E41951840E0007844C;
 			remoteInfo = xensifySDKTests;
@@ -78,9 +77,7 @@
 		3415CE0F1951851100C63C1E /* xensifySkeletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xensifySkeletonTests-Info.plist"; sourceTree = "<group>"; };
 		3415CE111951851100C63C1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3415CE131951851100C63C1E /* xensifySkeletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xensifySkeletonTests.m; sourceTree = "<group>"; };
-		3421E934196709400003CC59 /* xensifySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = xensifySDK.xcodeproj; path = "../../../../Github/Xensify_iOS-SDK/xensifySDK.xcodeproj"; sourceTree = "<group>"; };
-		342459701958C32100901608 /* CustomURLCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomURLCache.h; sourceTree = "<group>"; };
-		342459711958C32800901608 /* CustomURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomURLCache.m; sourceTree = "<group>"; };
+		559A8304196D43F700682738 /* xensifySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = xensifySDK.xcodeproj; path = "../../Xensify_iOS-SDK/xensifySDK.xcodeproj"; sourceTree = "<group>"; };
 		BCD5D5A16E5842DFBF056243 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3421E93E196709480003CC59 /* libxensifySDK.a in Frameworks */,
+				559A830E196D444600682738 /* libxensifySDK.a in Frameworks */,
 				3406E8E719561981000314BC /* CoreLocation.framework in Frameworks */,
 				3415CDE51951851100C63C1E /* CoreGraphics.framework in Frameworks */,
 				3415CDE71951851100C63C1E /* UIKit.framework in Frameworks */,
@@ -147,9 +144,7 @@
 		3415CDE81951851100C63C1E /* xensifySkeleton */ = {
 			isa = PBXGroup;
 			children = (
-				3421E934196709400003CC59 /* xensifySDK.xcodeproj */,
-				342459711958C32800901608 /* CustomURLCache.m */,
-				342459701958C32100901608 /* CustomURLCache.h */,
+				559A8304196D43F700682738 /* xensifySDK.xcodeproj */,
 				3415CDF11951851100C63C1E /* XFYAppDelegate.h */,
 				3415CDF21951851100C63C1E /* XFYAppDelegate.m */,
 				3415CDF41951851100C63C1E /* Main_iPhone.storyboard */,
@@ -193,11 +188,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3421E935196709400003CC59 /* Products */ = {
+		559A8305196D43F700682738 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3421E93B196709410003CC59 /* libxensifySDK.a */,
-				3421E93D196709410003CC59 /* xensifySDKTests.xctest */,
+				559A830B196D43F700682738 /* libxensifySDK.a */,
+				559A830D196D43F700682738 /* xensifySDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,8 +272,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3421E935196709400003CC59 /* Products */;
-					ProjectRef = 3421E934196709400003CC59 /* xensifySDK.xcodeproj */;
+					ProductGroup = 559A8305196D43F700682738 /* Products */;
+					ProjectRef = 559A8304196D43F700682738 /* xensifySDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -290,18 +285,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3421E93B196709410003CC59 /* libxensifySDK.a */ = {
+		559A830B196D43F700682738 /* libxensifySDK.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libxensifySDK.a;
-			remoteRef = 3421E93A196709410003CC59 /* PBXContainerItemProxy */;
+			remoteRef = 559A830A196D43F700682738 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3421E93D196709410003CC59 /* xensifySDKTests.xctest */ = {
+		559A830D196D43F700682738 /* xensifySDKTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = xensifySDKTests.xctest;
-			remoteRef = 3421E93C196709410003CC59 /* PBXContainerItemProxy */;
+			remoteRef = 559A830C196D43F700682738 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -367,7 +362,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3415CDFC1951851100C63C1E /* XFYMasterViewController.m in Sources */,
-				342459721958C32800901608 /* CustomURLCache.m in Sources */,
 				3415CDFF1951851100C63C1E /* XFYDetailViewController.m in Sources */,
 				3415CDF31951851100C63C1E /* XFYAppDelegate.m in Sources */,
 				3415CDEF1951851100C63C1E /* main.m in Sources */,
