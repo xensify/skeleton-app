@@ -13,9 +13,13 @@
 @interface XFYMasterViewController () {
     NSMutableArray *_objects;
 }
+- (IBAction)advertiseButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navBar;
 
+@property BOOL isAdvertising;
+
 @end
+
 
 @implementation XFYMasterViewController
 
@@ -33,14 +37,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
     //UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     //self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (XFYDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-        _xensifyManager = [[XFYManager alloc] initWithUserName:@"USERNAME" userKey: @"USERKEY" userUUID: @"USERUUID" customerUUID: @"devel" withMonitoring:YES];
-        [_xensifyManager setNotificationWithMessage: @"Welcome to Xensify Platform" notificationAction: @"open app"];
-        _xensifyManager.delegate = self;
+    _xensifyManager = [[XFYManager alloc] initWithUserName:@"mauro" userKey: @"bc265576c9358080ea00e434f5fa7950" userUUID: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D" customerUUID: @"devel" withMonitoring:YES];
+    [_xensifyManager setNotificationWithMessage: @"Welcome to Xensify Platform" notificationAction: @"open app"];
+    _xensifyManager.delegate = self;
+    _xensifyAPIManager = [[XFYAPIManager alloc] initWithUserName:@"mauro" userKey: @"bc265576c9358080ea00e434f5fa7950" userUUID: @"B9407F30-F5F8-466E-AFF9-25556B57FE6D" customerUUID: @"devel"];
+    _isAdvertising = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,7 +80,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
+    
     XFYObject *object = _objects[indexPath.row];
     cell.textLabel.text = object.objectName;
     return cell;
@@ -97,20 +103,20 @@
 }
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -146,7 +152,7 @@
         XFYObject *foundObject = (XFYObject *) object;
         if (![mutant containsObject:foundObject.objectName]){
             
-        [self insertNewObject: foundObject];
+            [self insertNewObject: foundObject];
         }
     }
     
@@ -160,7 +166,48 @@
     
     //XFYPlace *place = places[0];
     
-    //_navBar.title = place.locationName;
+    //_navBar.title = place.placeName;
+    
+}
+
+- (IBAction)advertiseButton:(id)sender {
+    
+    _navBar.title = @"...";
+    
+    if (!_isAdvertising){
+        
+        [_xensifyAPIManager objectFromMajorValue:@"63722" minorValue:@"49223" withCompletion:^(NSError *error, XFYObject *result) {
+            if(error){
+                NSLog(@"2 objectFromMajorValue error: %@", error);
+            }
+            else{
+                NSLog(@"2 objectFromMajorValue data: %@", result);
+                
+                result.objectName = @"virtualObject";
+                
+                [_xensifyManager startAdvertisingNewXFYObject:result];
+                
+                _isAdvertising = YES;
+            }
+        }];
+    }
+    else {
+        
+        [_xensifyManager stopAdvertisingXFYObject];
+        _isAdvertising = NO;
+        _navBar.title = @"Objects";
+        
+    }
+    
+}
+
+- (void) XFYManager: (XFYManager *) manager didStartAdvertisingXFYObject:(XFYObject *)object{
+    
+    NSLog(@"advertising started for region %@", object.objectName);
+    
+    _navBar.title = object.objectName;
+    
+    _isAdvertising = YES;
     
 }
 

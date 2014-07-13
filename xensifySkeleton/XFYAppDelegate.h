@@ -9,12 +9,16 @@
 #import <UIKit/UIKit.h>
 
 #import "xensifySDK/XFYAPIManager.h"
+#import "xensifySDK/XFYManager.h"
+
 //#import "CustomURLCache.h"
 
-@interface XFYAppDelegate : UIResponder <UIApplicationDelegate>
+@interface XFYAppDelegate : UIResponder <UIApplicationDelegate, XFYManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic, strong) XFYAPIManager  *xensifyManager;
+//@property (nonatomic, strong) XFYAPIManager *xensifyAPIManager;
+//
+//@property (nonatomic, strong) XFYManager *xensifyManager;
 
 @end

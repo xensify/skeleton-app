@@ -16,5 +16,6 @@
 
 @property (strong, nonatomic) XFYDetailViewController *detailViewController;
 @property (nonatomic, strong) XFYManager  *xensifyManager;
+@property (nonatomic, strong) XFYAPIManager  *xensifyAPIManager;
 
 @end
